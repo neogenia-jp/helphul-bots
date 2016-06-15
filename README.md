@@ -1,6 +1,11 @@
-# itoh-hubot
+# helphul-bot
 
-itoh-hubot は伊藤さんに敬意を表して制作された Slack bot です。
+helphul-bot は便利な bot をまとめたリポジトリです。
+現在、以下の bot が含まれています。
+
+- itoh-bot
+
+itoh-bot は伊藤さんに敬意を表して制作された Slack bot です。
 Hubot をベースに実装されています。
 
 
@@ -30,7 +35,7 @@ Slackアダプタを使用する場合は以下のようにします。
 
 ```
 % cd {repo-root}
-% sudo docker build -t helphul-bot .
-% docker run -e HUBOT_SLACK_TOKEN=<slack-api-token> -v `pwd`/itoh-bot:/opts/hubot-root helpful-bot
+% sudo docker build -t helpful-bot .
+% sudo docker run -ti -e HUBOT_SLACK_TOKEN=<slack-api-token> -v `pwd`/itoh-bot:/opt/hubot-root helpful-bot
 ```
 
